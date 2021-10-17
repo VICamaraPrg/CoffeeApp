@@ -2,7 +2,10 @@
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    <data>
+        <variable name="Login"
+                  type="com.example.coffeeapp.Login"/>
+    </data>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -76,7 +79,7 @@
             app:layout_constraintVertical_bias="0.269" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/TextViewNoAccount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/textview_noaccount"
