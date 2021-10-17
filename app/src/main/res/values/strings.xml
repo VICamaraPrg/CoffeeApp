@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CoffeeApp</string>
+    <string name="coffeeapp_text">CoffeeApp</string>
+    <string name="username_text">Username</string>
+    <string name="buttonlogin_text">Log In</string>
+    <string name="password_text">Password</string>
+    <string name="textview_noaccount">I don\'t have an account</string>
 </resources>
