@@ -11,13 +11,14 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-
+        <!-- NavHostFragment -->
         <fragment
-            android:id="@+id/titleFragment"
-            android:name="com.example.coffeeapp.FirstChoiceFragment"
+            android:id="@+id/NavHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
+            app:navGraph="@navigation/navigation"
+            app:defaultNavHost="true" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
