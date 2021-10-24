@@ -7,22 +7,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
-import com.example.coffeeapp.databinding.FragmentFirstChoiceBinding
+import com.example.coffeeapp.databinding.FragmentThirdChoiceBinding
 
-class FirstChoiceFragment : Fragment() {
+class ThirdChoiceFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentFirstChoiceBinding>(inflater,
-        R.layout.fragment_first_choice, container, false)
+        val binding = DataBindingUtil.inflate<FragmentThirdChoiceBinding>(inflater,
+        R.layout.fragment_third_choice, container, false)
 
-        binding.buttonToSecondChoice.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_firstChoiceFragment_to_secondChoiceFragment)
+        binding.buttonToSummary.setOnClickListener { view : View ->
+            view.findNavController().navigate(R.id.action_secondChoiceFragment_to_thirdChoiceFragment)
         }
 
         return binding.root
     }
-
 }
