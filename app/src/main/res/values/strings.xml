@@ -9,4 +9,26 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="next_button">Next</string>
     <string name="finish_button">Finish</string>
+
+    <string-array name="firstChoice_options">
+        <item>Coffee</item>
+        <item>Tea</item>
+        <item>Machiato</item>
+        <item>Ristretto</item>
+        <item>Lungo</item>
+        <item>Espresso</item>
+    </string-array>
+
+    <string-array name="secondChoice_options">
+        <item>Ensaimada</item>
+        <item>Donut</item>
+        <item>Cupkake</item>
+    </string-array>
+
+    <string-array name="thirdChoice_options">
+        <item>Baguette</item>
+        <item>Big baguette</item>
+        <item>Small baguette</item>
+    </string-array>
+
 </resources>
