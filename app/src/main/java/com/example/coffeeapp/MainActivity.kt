@@ -14,11 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        val intent = intent
 
-        binding.apply {
-            textviewuser.text = intent.getStringExtra(LoginActivity.userKey)
-            textviewpass.text = intent.getStringExtra(LoginActivity.passKey)
-        }
     }
 }

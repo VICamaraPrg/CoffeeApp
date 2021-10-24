@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/firstChoiceFragment">
+
+    <fragment
+        android:id="@+id/firstChoiceFragment"
+        android:name="com.example.coffeeapp.FirstChoiceFragment"
+        android:label="fragment_first_choice"
+        tools:layout="@layout/fragment_first_choice" >
+        <action
+            android:id="@+id/action_firstChoiceFragment_to_secondChoiceFragment"
+            app:destination="@id/secondChoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondChoiceFragment"
+        android:name="com.example.coffeeapp.SecondChoiceFragment"
+        android:label="fragment_second_choice"
+        tools:layout="@layout/fragment_second_choice" >
+        <action
+            android:id="@+id/action_secondChoiceFragment_to_thirdChoiceFragment"
+            app:destination="@id/thirdChoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdChoiceFragment"
+        android:name="com.example.coffeeapp.ThirdChoiceFragment"
+        android:label="fragment_third_choice"
+        tools:layout="@layout/fragment_third_choice" >
+        <action
+            android:id="@+id/action_thirdChoiceFragment_to_summaryFragment"
+            app:destination="@id/summaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.coffeeapp.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" />
+</navigation>
