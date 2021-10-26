@@ -43,4 +43,9 @@
         android:name="com.example.coffeeapp.SummaryFragment"
         android:label="fragment_summary"
         tools:layout="@layout/fragment_summary" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.coffeeapp.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" />
 </navigation>
