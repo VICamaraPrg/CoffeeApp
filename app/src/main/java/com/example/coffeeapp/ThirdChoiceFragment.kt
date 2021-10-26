@@ -21,7 +21,7 @@ class ThirdChoiceFragment : Fragment() {
         R.layout.fragment_third_choice, container, false)
 
         binding.buttonToSummary.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_secondChoiceFragment_to_thirdChoiceFragment)
+            view.findNavController().navigate(R.id.action_thirdChoiceFragment_to_summaryFragment)
         }
 
         val spinner: Spinner = binding.thirdChoiceOptions
