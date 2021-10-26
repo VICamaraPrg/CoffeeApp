@@ -1,14 +1,13 @@
 package com.example.coffeeapp
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI
 import com.example.coffeeapp.databinding.FragmentFirstChoiceBinding
 
 class FirstChoiceFragment : Fragment() {
@@ -39,7 +38,21 @@ class FirstChoiceFragment : Fragment() {
         }
 
 
+        setHasOptionsMenu(true)
+
         return binding.root
     }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.options_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return NavigationUI.
+        onNavDestinationSelected(item,requireView().findNavController())
+                || super.onOptionsItemSelected(item)
+    }
+
 
 }

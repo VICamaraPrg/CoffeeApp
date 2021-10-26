@@ -3,6 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/ContactFragment"
+        android:id="@+id/contactFragment"
         android:title="@string/contact" />
 </menu>
