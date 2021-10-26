@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_first_choice" >
         <action
             android:id="@+id/action_firstChoiceFragment_to_secondChoiceFragment"
-            app:destination="@id/secondChoiceFragment" />
+            app:destination="@id/secondChoiceFragment"
+            app:popUpTo="@id/firstChoiceFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/secondChoiceFragment"
@@ -21,7 +23,9 @@
         tools:layout="@layout/fragment_second_choice" >
         <action
             android:id="@+id/action_secondChoiceFragment_to_thirdChoiceFragment"
-            app:destination="@id/thirdChoiceFragment" />
+            app:destination="@id/thirdChoiceFragment"
+            app:popUpTo="@id/firstChoiceFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/thirdChoiceFragment"
@@ -30,7 +34,9 @@
         tools:layout="@layout/fragment_third_choice" >
         <action
             android:id="@+id/action_thirdChoiceFragment_to_summaryFragment"
-            app:destination="@id/summaryFragment" />
+            app:destination="@id/summaryFragment"
+            app:popUpTo="@id/firstChoiceFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/summaryFragment"
