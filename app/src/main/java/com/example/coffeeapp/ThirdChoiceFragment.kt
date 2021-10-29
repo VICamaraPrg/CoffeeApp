@@ -20,9 +20,6 @@ class ThirdChoiceFragment : Fragment() {
         val binding = DataBindingUtil.inflate<FragmentThirdChoiceBinding>(inflater,
         R.layout.fragment_third_choice, container, false)
 
-        binding.buttonToSummary.setOnClickListener { view : View ->
-            view.findNavController().navigate(R.id.action_thirdChoiceFragment_to_summaryFragment)
-        }
 
         val spinner: Spinner = binding.thirdChoiceOptions
         getContext()?.let {
@@ -36,6 +33,13 @@ class ThirdChoiceFragment : Fragment() {
                 // Apply the adapter to the spinner
                 spinner.adapter = adapter
             }
+        }
+
+        binding.buttonToSummary.setOnClickListener { view : View ->
+            view.findNavController().navigate(ThirdChoiceFragmentDirections
+                .actionThirdChoiceFragmentToSummaryFragment(
+                    spinner.selectedItem.toString())
+            )
         }
 
         return binding.root
