@@ -42,7 +42,11 @@
         android:id="@+id/summaryFragment"
         android:name="com.example.coffeeapp.SummaryFragment"
         android:label="fragment_summary"
-        tools:layout="@layout/fragment_summary" />
+        tools:layout="@layout/fragment_summary" >
+        <argument
+            android:name="Dessert"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/contactFragment"
         android:name="com.example.coffeeapp.ContactFragment"
